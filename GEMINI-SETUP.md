@@ -7,7 +7,7 @@
 
 ## เริ่มใช้
 
-1. เปิด `DL-04-RAG System Development I/RUN-AI.cmd`
+1. เปิด `RUN-AI.cmd` ที่ root ของ repository นี้ (ติดตั้งด้วย SETUP.cmd และรัน RUN.cmd เพื่อสร้าง index ก่อน)
 2. หากเครื่องยังไม่มี GOOGLE_API_KEY หรือ GEMINI_API_KEY โปรแกรมจะถาม key แบบซ่อนตัวอักษร
 3. วาง key ในหน้าต่างนั้นแล้วกด Enter ไม่ต้องส่ง key มาในแชท
 4. โปรแกรมตรวจสิทธิ์โมเดล แล้วเปิดถาม–ตอบผ่าน Gemini
@@ -17,12 +17,12 @@ key ที่กรอกใช้เฉพาะ session นั้น ไม่
 หากมีทั้งสองชื่อ จะใช้ GOOGLE_API_KEY ก่อน
 สร้าง/จัดการ key ได้ใน [Google AI Studio](https://aistudio.google.com/api-keys)
 
-ใช้ `DL-04-RAG System Development I/TEST-ALL.cmd` เพื่อทดสอบ Gemini จริง: คำตอบพร้อมอ้างอิง, rewrite/multi-query/HyDE และ memory
+ใช้ `TEST-ALL.cmd` เพื่อทดสอบ Gemini จริง: คำตอบพร้อมอ้างอิง, rewrite/multi-query/HyDE และ memory
 ชุดทดสอบนี้ตรวจการเปิด RUN-AI.cmd และการทำงานร่วมกับ local cross-encoder reranker ด้วย
-หากต้องการทดสอบใหม่ทั้งสามใบงานและ Gemini ในครั้งเดียว ให้เปิด TEST-ALL-ASSIGNMENTS.cmd ที่โฟลเดอร์รวม
-สำหรับการประเมินคำตอบทั้งชุด ให้เปิด DL-04-RAG System Development I/RUN-EVALUATION.cmd: ใช้ 54 คำถามเดียวกันใน 3 วิธี รวม 162 trials
-ผลนี้แยกจาก functional tests; ดู DL-04-RAG System Development I/GEMINI-EVALUATION-REPORT.md และ outputs/benchmark/
-คำสั่งนี้มีการเรียก API จริงและใช้โควตาตามบัญชี ผลอยู่ใน `DL-04-RAG System Development I/evidence/gemini/`
+repository นี้ทำงานแยกจาก DL-03 และ DL-05 ได้
+สำหรับการประเมินคำตอบทั้งชุด ให้เปิด RUN-EVALUATION.cmd: ใช้ 54 คำถามเดียวกันใน 3 วิธี รวม 162 trials
+ผลนี้แยกจาก functional tests; ดู GEMINI-EVALUATION-REPORT.md และ outputs/benchmark/
+คำสั่งนี้มีการเรียก API จริงและใช้โควตาตามบัญชี ผลอยู่ใน `evidence/gemini/`
 กรณี key ไม่ถูกต้อง โมเดลเข้าไม่ได้ โควตาหมด หรืออินเทอร์เน็ตมีปัญหา โปรแกรมจะแจ้ง failure
 ไม่มีการกลับไปเรียก Ollama หรือ OpenAI อัตโนมัติ
 
