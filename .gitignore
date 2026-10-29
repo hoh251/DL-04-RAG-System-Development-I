@@ -1,0 +1,15 @@
+.venv/
+.cache/
+__pycache__/
+*.py[cod]
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.log
+*.tmp
+# Models and generated binary indexes can be rebuilt by RUN.cmd.
+*.npy
+*.index
+*.pkl

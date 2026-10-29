@@ -1,0 +1,38 @@
+------------------------------------------------------------
+Build Index
+------------------------------------------------------------
+Source file : C:\Users\joeyt\Documents\Codex\2026-10-28\x20\outputs\separate-github-repos\DL-04-RAG-System-Development-I\data\sex_q_a.txt
+Model       : paraphrase-multilingual-MiniLM-L12-v2
+Chunk size  : 400 characters (overlap 50)
+
+[embedding] Loading paraphrase-multilingual-MiniLM-L12-v2...
+[vector_store] บันทึก index ที่ C:\Users\joeyt\Documents\Codex\2026-10-28\x20\outputs\separate-github-repos\DL-04-RAG-System-Development-I\vector_db\document.index
+[vector_store] บันทึก chunk store ที่ C:\Users\joeyt\Documents\Codex\2026-10-28\x20\outputs\separate-github-repos\DL-04-RAG-System-Development-I\vector_db\chunk_store.json
+[hybrid] สร้าง BM25 index จาก 541 chunks
+[hybrid] บันทึก BM25 index ที่ C:\Users\joeyt\Documents\Codex\2026-10-28\x20\outputs\separate-github-repos\DL-04-RAG-System-Development-I\vector_db\bm25_index.pkl
+
+Could not reach the Hub (Cannot reach https://huggingface.co/api/models/sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2: offline mode is enabled. To disable it, please unset the `HF_HUB_OFFLINE` environment variable.). Using cached commit hash for 'sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2'.
+
+Loading weights:   0%|          | 0/199 [00:00<?, ?it/s]
+Loading weights:  70%|██████▉   | 139/199 [00:00<00:00, 1365.95it/s]
+Loading weights: 100%|██████████| 199/199 [00:00<00:00, 1607.30it/s]
+
+Batches:   0%|          | 0/17 [00:00<?, ?it/s]
+Batches:   6%|▌         | 1/17 [00:02<00:36,  2.26s/it]
+Batches:  12%|█▏        | 2/17 [00:04<00:32,  2.17s/it]
+Batches:  18%|█▊        | 3/17 [00:06<00:28,  2.05s/it]
+Batches:  24%|██▎       | 4/17 [00:07<00:24,  1.90s/it]
+Batches:  29%|██▉       | 5/17 [00:09<00:22,  1.91s/it]
+Batches:  35%|███▌      | 6/17 [00:11<00:20,  1.86s/it]
+Batches:  41%|████      | 7/17 [00:13<00:17,  1.71s/it]
+Batches:  47%|████▋     | 8/17 [00:14<00:14,  1.60s/it]
+Batches:  53%|█████▎    | 9/17 [00:15<00:11,  1.50s/it]
+Batches:  59%|█████▉    | 10/17 [00:16<00:09,  1.43s/it]
+Batches:  65%|██████▍   | 11/17 [00:18<00:08,  1.34s/it]
+Batches:  71%|███████   | 12/17 [00:19<00:06,  1.31s/it]
+Batches:  76%|███████▋  | 13/17 [00:20<00:04,  1.21s/it]
+Batches:  82%|████████▏ | 14/17 [00:21<00:03,  1.06s/it]
+Batches:  88%|████████▊ | 15/17 [00:21<00:01,  1.10it/s]
+Batches:  94%|█████████▍| 16/17 [00:22<00:00,  1.28it/s]
+Batches: 100%|██████████| 17/17 [00:22<00:00,  1.56it/s]
+Batches: 100%|██████████| 17/17 [00:22<00:00,  1.32s/it]

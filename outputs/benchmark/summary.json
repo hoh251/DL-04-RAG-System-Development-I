@@ -1,0 +1,100 @@
+{
+  "model": "gemini-3.5-flash-lite",
+  "n_items": 54,
+  "expected_trials": 162,
+  "completed_trials": 162,
+  "successful_answers": 162,
+  "all_complete": true,
+  "methods": {
+    "dense_only": {
+      "n_trials": 54,
+      "n_successful_answers": 54,
+      "retrieval": {
+        "mrr": 0.8684,
+        "hit@1": 0.8333,
+        "recall@1": 0.6944,
+        "precision@1": 0.8333,
+        "ndcg@1": 0.8333,
+        "hit@3": 0.8889,
+        "recall@3": 0.75,
+        "precision@3": 0.2963,
+        "ndcg@3": 0.7585,
+        "hit@10": 0.9444,
+        "recall@10": 0.8056,
+        "precision@10": 0.0944,
+        "ndcg@10": 0.7792
+      },
+      "answer_metrics": {
+        "refused": 0.0741,
+        "has_citation": 0.963,
+        "citations_valid": 0.963,
+        "answer_context_token_overlap": 0.7681,
+        "answer_reference_token_precision": 0.6237,
+        "answer_reference_token_recall": 0.7176
+      },
+      "mean_retrieval_seconds": 0.059,
+      "mean_generation_seconds": 1.296
+    },
+    "hybrid": {
+      "n_trials": 54,
+      "n_successful_answers": 54,
+      "retrieval": {
+        "mrr": 0.9383,
+        "hit@1": 0.8889,
+        "recall@1": 0.75,
+        "precision@1": 0.8889,
+        "ndcg@1": 0.8889,
+        "hit@3": 1.0,
+        "recall@3": 0.8796,
+        "precision@3": 0.3457,
+        "ndcg@3": 0.858,
+        "hit@10": 1.0,
+        "recall@10": 1.0,
+        "precision@10": 0.1278,
+        "ndcg@10": 0.9119
+      },
+      "answer_metrics": {
+        "refused": 0.0,
+        "has_citation": 1.0,
+        "citations_valid": 1.0,
+        "answer_context_token_overlap": 0.7908,
+        "answer_reference_token_precision": 0.6488,
+        "answer_reference_token_recall": 0.79
+      },
+      "mean_retrieval_seconds": 0.048,
+      "mean_generation_seconds": 1.286
+    },
+    "hybrid_rerank": {
+      "n_trials": 54,
+      "n_successful_answers": 54,
+      "retrieval": {
+        "mrr": 0.9907,
+        "hit@1": 0.9815,
+        "recall@1": 0.8426,
+        "precision@1": 0.9815,
+        "ndcg@1": 0.9815,
+        "hit@3": 1.0,
+        "recall@3": 0.8704,
+        "precision@3": 0.3395,
+        "ndcg@3": 0.8929,
+        "hit@10": 1.0,
+        "recall@10": 0.9167,
+        "precision@10": 0.1111,
+        "ndcg@10": 0.9127
+      },
+      "answer_metrics": {
+        "refused": 0.0,
+        "has_citation": 1.0,
+        "citations_valid": 1.0,
+        "answer_context_token_overlap": 0.7842,
+        "answer_reference_token_precision": 0.6258,
+        "answer_reference_token_recall": 0.7541
+      },
+      "mean_retrieval_seconds": 11.712,
+      "mean_generation_seconds": 1.542
+    }
+  },
+  "golden_sha256": "28dd3035655a8c2c772ddd686d8ef570c03ada8b5fc10cec26858abd34274ec8",
+  "metrics_note": "Token-overlap measures are lexical proxies, not factual correctness or human validation.",
+  "scoring_version": "grouped-citations-v2"
+}

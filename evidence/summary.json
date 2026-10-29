@@ -1,0 +1,16 @@
+{
+  "executed_at_utc": "2026-10-29T14:19:10.997405+00:00",
+  "n_items": 54,
+  "retrieval_modes": [
+    "dense_only",
+    "bm25_only",
+    "hybrid"
+  ],
+  "best_mrr_mode": "bm25_only",
+  "answer_mode": "extractive",
+  "llm_tested": false,
+  "reranker_tested": false,
+  "query_transform_llm_tested": false,
+  "sample_answer_checks": 3,
+  "memory_add_and_reset": "passed"
+}

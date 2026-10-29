@@ -1,0 +1,23 @@
+test_aids_is_not_replaced_with_hiv (test_runtime.RuntimeTests.test_aids_is_not_replaced_with_hiv) ... ok
+test_cloud_model_must_be_explicit (test_runtime.RuntimeTests.test_cloud_model_must_be_explicit) ... ok
+test_disabled_llm_is_explicit (test_runtime.RuntimeTests.test_disabled_llm_is_explicit) ... ok
+test_empty_llm_output_is_failure (test_runtime.RuntimeTests.test_empty_llm_output_is_failure) ... ok
+test_extractive_mode_reports_itself (test_runtime.RuntimeTests.test_extractive_mode_reports_itself) ... ok
+test_gemini_request_uses_compatible_endpoint (test_runtime.RuntimeTests.test_gemini_request_uses_compatible_endpoint) ... ok
+test_generation_failure_does_not_silently_pass (test_runtime.RuntimeTests.test_generation_failure_does_not_silently_pass) ... ok
+test_google_key_missing (test_runtime.RuntimeTests.test_google_key_missing) ... ok
+test_known_formal_word_is_not_duplicated (test_runtime.RuntimeTests.test_known_formal_word_is_not_duplicated) ... ok
+test_memory_is_bounded_and_resettable (test_runtime.RuntimeTests.test_memory_is_bounded_and_resettable) ... ok
+test_no_context_never_calls_model (test_runtime.RuntimeTests.test_no_context_never_calls_model) ... ok
+test_no_llm_cannot_fake_generation (test_runtime.RuntimeTests.test_no_llm_cannot_fake_generation) ... ok
+test_ollama_does_not_need_an_api_key (test_runtime.RuntimeTests.test_ollama_does_not_need_an_api_key) ... ok
+test_openai_key_missing (test_runtime.RuntimeTests.test_openai_key_missing) ... ok
+test_openai_request_uses_completion_token_limit (test_runtime.RuntimeTests.test_openai_request_uses_completion_token_limit) ... ok
+test_retired_gemini_rejected (test_runtime.RuntimeTests.test_retired_gemini_rejected) ... ok
+test_transform_failure_does_not_silently_pass (test_runtime.RuntimeTests.test_transform_failure_does_not_silently_pass) ... ok
+test_unknown_provider (test_runtime.RuntimeTests.test_unknown_provider) ... ok
+
+----------------------------------------------------------------------
+Ran 18 tests in 0.013s
+
+OK

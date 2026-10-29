@@ -1,0 +1,36 @@
+------------------------------------------------------------
+Sexual Health Question Answering System
+------------------------------------------------------------
+[embedding] Loading paraphrase-multilingual-MiniLM-L12-v2...
+การตั้งค่า (แก้ได้ที่ config.py):
+  เปิด  ค้นแบบผสม BM25 + dense
+  ปิด   จัดอันดับใหม่ (rerank)
+  ปิด   ปรับคำถามก่อนค้น
+  เปิด  จำบทสนทนา
+  ปิด   ใช้ LLM เขียนคำตอบ
+
+Hi Bro! 😎
+Ask me anything
+
+Q: 
+PrEP (Pre-Exposure Prophylaxis) คือยาต้านไวรัสที่กินก่อนสัมผัสเชื้อเพื่อป้องกันการติดเชื้อเอชไอวี เมื่อกินสม่ำเสมอจะลดความเสี่ยงติดเชื้อจากเพศสัมพันธ์ได้มากกว่า 99% เหมาะกับผู้ที่มีคู่นอนหลายคน ผู้ที่มีคู่นอนซึ่งมีเชื้อเอชไอวีและยังควบคุมไวรัสไม่ได้ ผู้ที่ใช้ถุงยางไม่สม่ำเสมอ ผู้ที่เคยเป็น STI ซ้ำ ๆ หรือเคยใช้ PEP มาก่อน ต้องตรวจยืนยันว่าไม่มีเชื้อเอชไอวีก่อนเริ่มยา และตรวจติดตามทุก 3 เดือน หมายเหตุ PrEP ไม่ป้องกัน STI ชนิดอื่นและไม่ป้องกันการตั้งครรภ์ [1]
+
+หมายเหตุ: ข้อมูลนี้ใช้เพื่อการศึกษาเท่านั้น
+
+Answer mode: extractive
+
+Sources:
+  [1] PrEP คืออะไร และเหมาะกับใคร
+      Line 45 · Score 0.032
+  [2] PEP คืออะไร ต่างจาก PrEP อย่างไร
+      Line 49 · Score 0.032
+  [3] ทำไมเพศสัมพันธ์ทางทวารหนักจึงเสี่ยงกว่าช่องทางอื่น
+      Line 73 · Score 0.03
+
+Q: ขอบใจหลายๆ เด้อ !!!
+
+Could not reach the Hub (Cannot reach https://huggingface.co/api/models/sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2: offline mode is enabled. To disable it, please unset the `HF_HUB_OFFLINE` environment variable.). Using cached commit hash for 'sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2'.
+
+Loading weights:   0%|          | 0/199 [00:00<?, ?it/s]
+Loading weights:  38%|███▊      | 76/199 [00:00<00:00, 724.90it/s]
+Loading weights: 100%|██████████| 199/199 [00:00<00:00, 1348.39it/s]
