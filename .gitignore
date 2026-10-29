@@ -13,3 +13,14 @@ __pycache__/
 *.npy
 *.index
 *.pkl
+
+# Generated run artifacts stay local.
+/evidence/
+/outputs/
+/vector_db/
+/REPORT.md
+/PDF-REPORT.md
+/FULL-TEST-REPORT.md
+/GEMINI-EVALUATION-REPORT.md
+/LOCAL-TEST-REPORT.md
+/*verification.json

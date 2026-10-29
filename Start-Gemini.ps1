@@ -1,4 +1,4 @@
-param([ValidateSet('Chat', 'Test', 'Check', 'Evaluate')][string]$Mode = 'Chat', [switch]$NoPrompt)
+param([ValidateSet('Chat', 'Check', 'Evaluate')][string]$Mode = 'Chat', [switch]$NoPrompt)
 . (Join-Path $PSScriptRoot 'Runtime.ps1')
 $env:RAG_LLM_PROVIDER = 'gemini'
 if (-not $env:RAG_GEMINI_MODEL) { $env:RAG_GEMINI_MODEL = 'gemini-3.5-flash-lite' }
@@ -34,15 +34,7 @@ try {
     } elseif ($Mode -eq 'Evaluate') {
         & $pythonExe -m evaluation.benchmark_gemini --resume
         $benchmarkExit = $LASTEXITCODE
-        & $pythonExe build_gemini_report.py
         if ($benchmarkExit -ne 0) { throw 'Gemini evaluation is incomplete. Completed trials are saved for resume.' }
-    } else {
-        & $pythonExe -m unittest discover -s tests -v
-        if ($LASTEXITCODE -ne 0) { throw 'Runtime tests failed.' }
-        & $pythonExe audit_gemini.py
-        $geminiTestExit = $LASTEXITCODE
-        & $pythonExe build_gemini_report.py
-        if ($geminiTestExit -ne 0) { throw 'Gemini live tests did not pass. See evidence/gemini/.' }
     }
     if ($LASTEXITCODE -ne 0) { throw 'Gemini task failed; see evidence/gemini/.' }
 } finally {

@@ -71,7 +71,7 @@ def main():
 รันเมื่อ (UTC): {stamp}
 
 รายงานนี้เป็นการทดลองพื้นฐานแบบ extractive เท่านั้น ผลทดสอบเพิ่มเติมของ LLM จริง,
-query transformation และ reranking อยู่ใน FULL-TEST-REPORT.md และ evidence/full/live_checks.json
+query transformation และ reranking เปิดทดลองได้จาก config.py และ RUN-AI.cmd
 
 ## การพัฒนาและการตั้งค่า
 
@@ -105,7 +105,7 @@ nDCG@3 คำนึงถึงอันดับของเอกสารท�
 - Golden set สร้างอัตโนมัติจากฐานข้อมูลเดียวกับ index จึงเป็นการทดสอบ retrieval ภายในชุดข้อมูล
   ไม่ใช่ผลทดสอบกับคำถามอิสระที่มนุษย์ตรวจแล้ว และไม่ควรอ้างว่าสะท้อนการใช้งานจริงทั้งหมด
 - การแปลงคำถามใน golden set บางกรณีเปลี่ยนความหมาย จึงต้องตรวจคู่คำถามด้วยคนก่อนอ้างผลเชิงวิจัย
-- รายงาน baseline นี้ไม่รวมผล LLM; ผล functional tests ของ cross-encoder และ Gemini อยู่ใน FULL-TEST-REPORT.md
+- รายงาน baseline นี้ไม่รวมผล LLM; ใช้ RUN-AI.cmd เพื่อทดลองคำตอบ Gemini พร้อม cross-encoder ตาม config
 - ผลเปรียบเทียบคำตอบ Gemini บนชุดเดียวกันอยู่ใน GEMINI-EVALUATION-REPORT.md
 - การเปิด query transform ผ่าน LLM ต้องเปิด USE_LLM ด้วย
 - การค้นหาใกล้เคียงยังไม่ได้พิสูจน์การปฏิเสธคำถามนอกขอบเขต
